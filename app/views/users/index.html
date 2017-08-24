@@ -1,0 +1,48 @@
+<div class="container">
+    
+    <breadcrumbs links="vm.breadcrumbLinks"></breadcrumbs>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Users</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form>
+                <div class="form-group">
+                    <label for="searchField">Search</label>
+                    <input ng-model="vm.searchField" type="text" class="form-control" id="searchField" placeholder="Search By Full Name">
+                </div>
+            </form>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user in vm.users | searchField: 'name' | filter: vm.searchField">
+                        <td>{{user.id}}</td>
+                        <td>{{user.name}}</td>
+                        <td>{{user.username}}</td>
+                        <td>{{user.email}}</td>
+                        <td>
+                            {{user.address.street}} {{user.address.suite}} <br /> {{user.address.city}} <br /> {{user.address.zipcode}}
+                        </td>
+                        <td>{{user.phone}}</td>
+                        <td>{{user.website}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

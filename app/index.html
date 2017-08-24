@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <base href="/app/">
+        
+        <title>The HTML5 Herald</title>
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SitePoint">
+
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body ng-app="app">
+        <navbar></navbar>
+
+        <ui-view></ui-view>
+
+        <!-- libraries -->
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../node_modules/angular/angular.js"></script>
+        <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+        <!-- angular code -->
+        <script src="app.module.js"></script>
+
+        <!-- constants -->
+        <script src="constants/api.constants.js"></script>
+        
+        <!-- routes -->
+        <script src="routes/route.provider.js"></script>
+        <script src="routes/base.routes.js"></script>
+        <script src="routes/user.routes.js"></script>
+
+        <!-- services -->
+        <script src="services/users/users.service.js"></script>
+
+        <!-- factoires -->
+        <script src="factories/logger/logger.factory.js"></script>
+
+        <!-- controllers -->
+        <script src="controllers/home/home.index.controller.js"></script>
+        <script src="controllers/users/users.index.controller.js"></script>
+
+        <!-- components -->
+        <script src="components/nav/navbar.component.js"></script>
+
+        <!-- directives -->
+        <script src="directives/breadcrumbs.directive.js"></script>
+
+        <!-- filters -->
+        <script src="filters/searchField.js"></script>
+    </body>
+</html>

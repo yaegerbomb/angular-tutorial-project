@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-md-12">
+        <ol class="breadcrumb">
+            <li ng-repeat="link in ctrl.links">
+                <a ui-sref="{{link.uisref}}" ng-if="!$last">{{link.title}}</a>
+                <span ng-if="$last">{{link.title}}</span>
+            </li>
+        </ol>
+    </div>
+</div>
