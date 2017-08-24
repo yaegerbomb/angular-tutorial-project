@@ -1,0 +1,11 @@
+{
+  "name": "angular1xtutorial",
+  "version": "1.0.0",
+  "description": "A simple backendless nodejs angular 1.X project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Yaeger",
+  "license": "MIT"
+}
