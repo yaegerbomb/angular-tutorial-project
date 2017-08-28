@@ -13,7 +13,7 @@
         return {
             getUsers: getUsers
         }
-
+        
         function getUsers(){
             LoggerFactory.logInfo("Getting Users");
             return $http.get(APIConstants.root + "/users");

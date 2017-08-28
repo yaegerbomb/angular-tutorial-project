@@ -14,7 +14,7 @@
         init();
 
         function init(){
-            vm.welcomeMessage = "My welcome message"
+            vm.welcomeMessage = "My welcome message!!!"
         }
 
     }
