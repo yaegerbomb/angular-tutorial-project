@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Queried Post</h2>
+            <code>
+                {{vm.post}}
+            </code>
+        </div>
+
+        <div class="col-md-12">
+            <h2>Create Post </h2>
+            <form>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input name="title" class="form-control" type="text" ng-model="vm.newPost.title" placeholder="Title" />
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Description</label>
+                    <textarea ng-model="vm.newPost.body" class="form-control" rows="3" placeholder="Description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button ng-click="vm.createPost()" class="btn btn-success pull-right">Create Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
