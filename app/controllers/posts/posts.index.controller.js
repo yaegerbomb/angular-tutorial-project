@@ -50,7 +50,6 @@
         function createPost(){
             var post = {
                 userid: 1,
-                id: 9999,
                 title: vm.newPost.title,
                 body: vm.newPost.body
             };
